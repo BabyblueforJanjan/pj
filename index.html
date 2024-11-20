@@ -1,0 +1,75 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สถานที่ท่องเที่ยวในขอนแก่น</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about-styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="brand">
+                <a href="index.html" class="brand-text">สถานที่ท่องเที่ยวในขอนแก่น</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-item active">หน้าแรก</a>
+                <a href="about.html" class="nav-item">เกี่ยวกับเรา</a>
+            </div>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>ค้นหาสถานที่ท่องเที่ยวในขอนแก่น</h1>
+            <p>สัมผัสประสบการณ์ใหม่ๆ ในขอนแก่นกับสถานที่ท่องเที่ยวสุดประทับใจ</p>
+        </div>
+    </section>
+
+    <!-- Attractions Grid -->
+    <section class="attractions">
+        <div class="container">
+            <div id="attractionsGrid" class="attractions-grid">
+                <!-- Cards will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="attractionModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close-button">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="image-carousel">
+                    <img id="modalImage" class="modal-image" src="" alt="">
+                    <button class="carousel-button prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-button next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="modal-info">
+                    <!-- Modal info will be inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
